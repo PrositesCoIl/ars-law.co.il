@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>עו״ד אריאלה רוזנטל-סודרי | נוטריון בחיפה וגירושין</title>
-<meta name="description" content="עו״ד, נוטריון ומגשרת בחיפה. חטיפת ילדים, גירושין, צוואות, ירושות ותרגומים נוטריוניים במגוון שפות.">
+<title>עו״ד אריאלה רוזנטל-סודרי | חטיפת ילדים, גירושין ונוטריון בחיפה</title>
+<meta name="description" content="עו״ד ונוטריון בחיפה עם ניסיון רב: חטיפת ילדים, גירושין, צוואות, ירושות ותרגומים נוטריוניים במגוון שפות. ליווי משפטי מדויק ואחראי.">
 
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&display=swap" rel="stylesheet">
 
 <style>
+
 body{
-font-family:Heebo,Arial;
+font-family:'Heebo',Arial;
 font-size:18px;
 margin:0;
-background:#f5f7fb;
-color:#222;
-line-height:1.7;
+background:#f4f6fb;
+color:#1e293b;
+line-height:1.8;
 }
 
-.container{max-width:1100px;margin:auto;padding:20px}
+.container{max-width:1200px;margin:auto;padding:20px}
 
+/* HEADER */
 header{
 background:#fff;
 position:sticky;
 top:0;
-border-bottom:1px solid #ddd;
+z-index:10;
+border-bottom:1px solid #e5e7eb;
 }
 
 nav{
@@ -33,57 +37,109 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 flex-wrap:wrap;
+gap:10px;
 }
 
 nav a{
 text-decoration:none;
-color:#222;
-padding:10px;
+color:#111;
 font-weight:700;
+padding:10px;
 }
 
-.btn{
-background:#1e3a8a;
+.phone{
+background:#0f172a;
 color:#fff;
 padding:12px 18px;
-border-radius:8px;
+border-radius:10px;
 text-decoration:none;
-display:inline-block;
 }
 
+/* HERO */
 .hero{
 display:grid;
-grid-template-columns:1fr 1fr;
-gap:30px;
+grid-template-columns:1.2fr 1fr;
+gap:40px;
 align-items:center;
+margin-top:40px;
+}
+
+.hero h1{
+font-size:42px;
+line-height:1.3;
+}
+
+.hero p{
+font-size:20px;
 }
 
 .hero img{
 width:100%;
-border-radius:16px;
+border-radius:20px;
 }
 
-section{
-margin-top:40px;
-}
+/* SECTIONS */
+section{margin-top:60px}
 
 .card{
 background:#fff;
-padding:25px;
-border-radius:16px;
-box-shadow:0 10px 30px rgba(0,0,0,0.05);
+padding:35px;
+border-radius:20px;
+box-shadow:0 10px 40px rgba(0,0,0,0.05);
 }
 
+h2{
+font-size:30px;
+margin-bottom:15px;
+}
+
+h3{
+font-size:22px;
+margin-top:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.grid-2{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.highlight{
+border-right:5px solid #c6a86a;
+padding-right:15px;
+}
+
+/* CTA */
+.cta{
+background:#0f172a;
+color:#fff;
+padding:40px;
+border-radius:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+/* FOOTER */
 footer{
-margin-top:50px;
+margin-top:60px;
 background:#fff;
-padding:30px;
-font-size:18px;
+padding:40px;
 }
 
-@media(max-width:768px){
+@media(max-width:900px){
 .hero{grid-template-columns:1fr}
+.grid{grid-template-columns:1fr}
+.grid-2{grid-template-columns:1fr}
 }
+
 </style>
 </head>
 
@@ -92,90 +148,153 @@ font-size:18px;
 <header>
 <div class="container">
 <nav>
-<div><strong>אריאלה רוזנטל-סודרי</strong></div>
+<div><strong>עו״ד אריאלה רוזנטל-סודרי</strong></div>
 
 <div>
 <a href="#about">אודות</a>
-<a href="#practice">תחומים</a>
+<a href="#practice">תחומי עיסוק</a>
 <a href="#notary">נוטריון</a>
 <a href="#contact">יצירת קשר</a>
 </div>
 
 <div>
 <a href="https://ars-law.co.il/%D7%A0%D7%95%D7%98%D7%A8%D7%99%D7%95%D7%9F-%D7%91%D7%97%D7%99%D7%A4%D7%94/" target="_blank">נוטריון בחיפה</a>
-<a class="btn" href="tel:048668665">04-866-8665</a>
+<a class="phone" href="tel:048668665">04-866-8665</a>
 </div>
+
 </nav>
 </div>
 </header>
 
 <div class="container">
 
+<!-- HERO -->
 <section class="hero">
 <div>
-<h1>עו״ד, נוטריון ומגשרת עם ניסיון רב</h1>
+<h1>ייצוג משפטי מדויק בתחומים הרגישים ביותר בחיים</h1>
+
 <p>
-משרד אריאלה רוזנטל-סודרי מעניק ליווי משפטי בתחומים הרגישים ביותר:
-חטיפת ילדים, גירושין, צוואות, ירושות ושירותי נוטריון מקצועיים.
+עו״ד אריאלה רוזנטל-סודרי מעניקה ליווי משפטי מקצועי בתחומי חטיפת ילדים,
+גירושין, צוואות, ירושות ושירותי נוטריון – תוך שילוב בין ניסיון רב, חשיבה אסטרטגית והבנה אנושית עמוקה.
 </p>
 
-<p><strong>מובילה במיוחד בתחום חטיפת ילדים בישראל ודיני משפחה.</strong></p>
+<p class="highlight">
+המשרד נחשב לאחד הגורמים המקצועיים המשפיעים ביותר בתחום חטיפת ילדים בישראל.
+</p>
 
-<a class="btn" href="tel:048668665">התקשרו עכשיו</a>
+<a class="phone" href="tel:048668665">שיחה עם המשרד</a>
+
 </div>
 
 <div>
-<img src="ariela-office.jpg" alt="עו״ד אריאלה רוזנטל סודרי">
+<img src="ariela-office.jpg" alt="עורכת הדין אריאלה רוזנטל סודרי">
 </div>
 </section>
 
+<!-- ABOUT -->
 <section id="about">
 <div class="card">
-<h2>אודות</h2>
+<h2>אודות המשרד</h2>
+
 <p>
-המשרד פועל משנת 2000 ומעניק ייעוץ וייצוג משפטי מקצועי,
-תוך שילוב בין ניסיון משפטי רחב והבנה אנושית עמוקה.
+משרד עורכי הדין אריאלה רוזנטל-סודרי פועל משנת 2000 ומעניק שירותים משפטיים ללקוחות פרטיים ועסקיים,
+בתחומים מורכבים הדורשים שילוב בין ידע משפטי, ניסיון מעשי ויכולת ניהול תיקים ברמה גבוהה.
 </p>
+
 <p>
-עו״ד אריאלה רוזנטל-סודרי מתמחה גם בליווי בהוצאת דרכון ואזרחות גרמנית.
+המשרד שם דגש על התאמת האסטרטגיה המשפטית לכל לקוח באופן אישי, תוך שמירה על דיסקרטיות מלאה,
+ליווי צמוד וחתירה לתוצאה המדויקת ביותר.
 </p>
+
+<p>
+בנוסף לפעילות המשפטית, המשרד מעניק גם ליווי בהוצאת דרכון ואזרחות גרמנית.
+</p>
+
 </div>
 </section>
 
+<!-- PRACTICE -->
 <section id="practice">
 <div class="card">
-<h2>תחומי עיסוק</h2>
+<h2>תחומי עיסוק מרכזיים</h2>
 
-<p><strong>חטיפת ילדים</strong> – טיפול בתיקים מורכבים בישראל ובינלאומי</p>
-<p><strong>גירושין ודיני משפחה</strong> – ליווי מלא בתהליכים רגישים</p>
-<p><strong>צוואות וירושות</strong> – הסדרה משפטית ברורה ומדויקת</p>
-<p><strong>ייפוי כוח</strong> – ייעוץ והכנה מותאמת אישית</p>
+<div class="grid">
 
+<div>
+<h3>חטיפת ילדים</h3>
+<p>
+טיפול בתיקים מורכבים בישראל ובינלאומי, כולל יישום אמנת האג והחזרת ילדים חטופים.
+תחום הדורש ניסיון, מהירות תגובה וניהול משפטי מדויק.
+</p>
+</div>
+
+<div>
+<h3>גירושין ודיני משפחה</h3>
+<p>
+ליווי מלא בהליכי גירושין, משמורת, מזונות וחלוקת רכוש,
+תוך התאמה מלאה למצב האישי של כל לקוח.
+</p>
+</div>
+
+<div>
+<h3>צוואות וירושות</h3>
+<p>
+עריכת צוואות, טיפול בצווי ירושה וקיום צוואה,
+והסדרת נושאים משפטיים משפחתיים באופן ברור ומסודר.
+</p>
+</div>
+
+</div>
 </div>
 </section>
 
+<!-- NOTARY -->
 <section id="notary">
 <div class="card">
 <h2>שירותי נוטריון בחיפה</h2>
 
 <p>
-אימות חתימה, תרגומים נוטריוניים, אישורי מסמכים ועוד.
+המשרד מספק שירותי נוטריון בהתאם לחוק,
+לרבות אישור מסמכים, אימות חתימה, אישורי חיים ותרגומים נוטריוניים.
 </p>
 
-<p><strong>שפות שירות:</strong></p>
-<p>עברית | אנגלית | גרמנית | צרפתית | ספרדית | איטלקית</p>
+<div class="grid-2">
+
+<div>
+<h3>מה כולל השירות</h3>
+<p>
+תרגומים נוטריוניים, אישור הצהרות, מסמכים להגירה,
+ייפוי כוח, מסמכי נדל״ן ומסמכים אישיים.
+</p>
+</div>
+
+<div>
+<h3>שפות</h3>
+<p>
+עברית, אנגלית, גרמנית, צרפתית, ספרדית, איטלקית ולעיתים גם הולנדית.
+</p>
+</div>
+
+</div>
+
+<br>
 
 <a href="https://ars-law.co.il/%D7%A0%D7%95%D7%98%D7%A8%D7%99%D7%95%D7%9F-%D7%91%D7%97%D7%99%D7%A4%D7%94/" target="_blank">
-מעבר לעמוד נוטריון
+לעמוד נוטריון בחיפה
 </a>
 
 </div>
 </section>
 
+<!-- CTA -->
 <section id="contact">
-<div class="card">
-<h2>יצירת קשר</h2>
-<p>טלפון: <a href="tel:048668665">04-866-8665</a></p>
+<div class="cta">
+<div>
+<h2>לייעוץ משפטי</h2>
+<p>ניתן ליצור קשר טלפוני ולקבל מענה מקצועי בהתאם לצורך</p>
+</div>
+
+<a class="phone" href="tel:048668665">04-866-8665</a>
 </div>
 </section>
 
@@ -183,16 +302,21 @@ font-size:18px;
 
 <footer>
 <div class="container">
+
 <p>
-אנו מכבדים את פרטיות המשתמשים באתר זה. דף הנחיתה אינו כולל טפסים ואינו אוסף מידע אישי.
-ייתכן שימוש ב-cookies לשיפור חוויית המשתמש.
+אנו מכבדים את פרטיות המשתמשים באתר זה. דף הנחיתה אינו כולל טפסי השארת פרטים ואינו אוסף מידע אישי באופן ישיר.
+ייתכן ונעשה שימוש ב-cookies לצורך שיפור חוויית המשתמש.
 </p>
+
 <p>
 האתר מאוחסן באמצעות GitHub.
 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank">
 מדיניות פרטיות
 </a>
 </p>
+
+<p><strong>טלפון:</strong> 04-866-8665</p>
+
 </div>
 </footer>
 
