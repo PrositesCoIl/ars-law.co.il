@@ -502,6 +502,86 @@
       .sticky-call{left:12px;right:12px}
       .sticky-call .btn{width:100%}
     }
+
+    .nav-toggle{
+  display:none;
+  width:54px;
+  height:54px;
+  border:1px solid var(--line-strong);
+  background:#fff;
+  border-radius:16px;
+  padding:0;
+  cursor:pointer;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  gap:6px;
+  box-shadow:var(--shadow);
+}
+
+.nav-toggle span{
+  display:block;
+  width:24px;
+  height:2px;
+  background:var(--brand);
+  border-radius:999px;
+  transition:transform .25s ease, opacity .25s ease;
+}
+
+@media (max-width: 760px){
+  .header-inner{
+    grid-template-columns:1fr auto;
+    align-items:center;
+    gap:14px;
+    padding:14px 0;
+  }
+
+  .brand{
+    min-width:0;
+  }
+
+  .nav-toggle{
+    display:inline-flex;
+  }
+
+  nav{
+    grid-column:1 / -1;
+    display:none;
+    width:100%;
+  }
+
+  nav.active{
+    display:block;
+  }
+
+  nav ul{
+    flex-direction:column;
+    align-items:stretch;
+    gap:8px;
+    padding-top:10px;
+  }
+
+  nav a{
+    display:block;
+    width:100%;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:14px 16px;
+  }
+
+  .nav-toggle.active span:nth-child(1){
+    transform:translateY(8px) rotate(45deg);
+  }
+
+  .nav-toggle.active span:nth-child(2){
+    opacity:0;
+  }
+
+  .nav-toggle.active span:nth-child(3){
+    transform:translateY(-8px) rotate(-45deg);
+  }
+}
   </style>
 </head>
 <body>
@@ -514,28 +594,40 @@
     </div>
   </div>
 
-  <header aria-label="כותרת עליונה ותפריט ניווט">
-    <div class="container header-inner">
-      <a class="brand" href="#top" title="חזרה לראש הדף" aria-label="חזרה לראש הדף">
-        <span class="brand-mark" aria-hidden="true">ARS</span>
-        <span class="brand-copy">
-          <strong>אריאלה רוזנטל-סודרי</strong>
-          <span>עורכת דין, נוטריון ומגשרת</span>
-        </span>
-      </a>
+<header aria-label="כותרת עליונה ותפריט ניווט">
+  <div class="container header-inner">
+    <a class="brand" href="#top" title="חזרה לראש הדף" aria-label="חזרה לראש הדף">
+      <span class="brand-mark" aria-hidden="true">ARS</span>
+      <span class="brand-copy">
+        <strong>אריאלה רוזנטל-סודרי</strong>
+        <span>עורכת דין, נוטריון ומגשרת</span>
+      </span>
+    </a>
 
-      <nav aria-label="תפריט ראשי">
-        <ul>
-          <li><a href="#about" title="מעבר לאזור אודות">אודות</a></li>
-          <li><a href="#abduction" title="מעבר לאזור חטיפת ילדים">חטיפת ילדים</a></li>
-          <li><a href="#family" title="מעבר לאזור גירושין ודיני משפחה">גירושין ודיני משפחה</a></li>
-          <li><a href="#inheritance" title="מעבר לאזור צוואות ירושות וייפוי כוח">צוואות וירושות</a></li>
-          <li><a href="#notary" title="מעבר לאזור שירותי נוטריון">שירותי נוטריון</a></li>
-          <li><a href="#contact" title="מעבר לאזור יצירת קשר">יצירת קשר</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="site-nav"
+      aria-label="פתיחת תפריט ניווט"
+      title="פתיחת תפריט">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="site-nav" aria-label="תפריט ראשי">
+      <ul>
+        <li><a href="#about" title="מעבר לאזור אודות">אודות</a></li>
+        <li><a href="#abduction" title="מעבר לאזור חטיפת ילדים">חטיפת ילדים</a></li>
+        <li><a href="#family" title="מעבר לאזור גירושין ודיני משפחה">גירושין ודיני משפחה</a></li>
+        <li><a href="#inheritance" title="מעבר לאזור צוואות ירושות וייפוי כוח">צוואות וירושות</a></li>
+        <li><a href="#notary" title="מעבר לאזור שירותי נוטריון">שירותי נוטריון</a></li>
+        <li><a href="#contact" title="מעבר לאזור יצירת קשר">יצירת קשר</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
   <main id="main-content">
 <section class="hero" id="top" aria-labelledby="hero-title">
@@ -759,5 +851,30 @@
   <div class="sticky-call" aria-label="כפתור חיוג קבוע">
     <a class="btn btn-primary" href="tel:048668665" title="התקשרו עכשיו למשרד">שיחה מהירה: 04-866-8665</a>
   </div>
+
+  <script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const siteNav = document.querySelector('#site-nav');
+
+  if (navToggle && siteNav) {
+    navToggle.addEventListener('click', function () {
+      const isOpen = navToggle.classList.toggle('active');
+      siteNav.classList.toggle('active', isOpen);
+      navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    siteNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', function () {
+        if (window.innerWidth <= 760) {
+          navToggle.classList.remove('active');
+          siteNav.classList.remove('active');
+          navToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  }
+</script>
+
+  
 </body>
 </html>
