@@ -1,331 +1,767 @@
+
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>אריאלה רוזנטל-סודרי | חטיפת ילדים, גירושין ונוטריון בחיפה</title>
+  <meta name="description" content="דף נחיתה לעו״ד, נוטריון ומגשרת אריאלה רוזנטל-סודרי: חטיפת ילדים בישראל ובינלאומית, גירושין, צוואות, ירושות, ייפוי כוח ושירותי נוטריון בחיפה במגוון שפות." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="theme-color" content="#15233f" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="he_IL" />
+  <meta property="og:title" content="אריאלה רוזנטל-סודרי | חטיפת ילדים, גירושין ונוטריון בחיפה" />
+  <meta property="og:description" content="ייצוג משפטי מדויק ורגיש בתחומי חטיפת ילדים, גירושין, צוואות, ירושות, ייפוי כוח ושירותי נוטריון בשפות שונות." />
+  <meta property="og:image" content="ariela.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --bg:#f6f7fb;
+      --surface:#ffffff;
+      --surface-soft:#f9fafc;
+      --line:#d8dee9;
+      --line-strong:#bdc8da;
+      --text:#162033;
+      --muted:#4c596e;
+      --brand:#15233f;
+      --brand-2:#22365d;
+      --accent:#b69459;
+      --accent-soft:#f3ecde;
+      --focus:#1d4ed8;
+      --shadow:0 18px 42px rgba(21,35,63,.10);
+      --radius:24px;
+      --max:1240px;
+      --nav-height:88px;
+    }
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:"Heebo", Arial, sans-serif;
+      font-size:18px;
+      line-height:1.75;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top right, rgba(182,148,89,.14), transparent 26%),
+        radial-gradient(circle at top left, rgba(34,54,93,.07), transparent 24%),
+        var(--bg);
+      text-rendering:optimizeLegibility;
+      -webkit-font-smoothing:antialiased;
+    }
 
-<title>עו"ד אריאלה רוזנטל-סודרי | דיני משפחה, חטיפת ילדים ונוטריון בחיפה</title>
-<meta name="description" content="משרד עורכי דין ונוטריון בחיפה. ליווי מקצועי בדיני משפחה, חטיפת ילדים, צוואות וירושות ושירותי נוטריון במגוון שפות.">
+    img{display:block;max-width:100%;height:auto}
+    a{color:inherit}
+    a:focus-visible, button:focus-visible{
+      outline:3px solid var(--focus);
+      outline-offset:4px;
+      border-radius:14px;
+    }
 
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+    .skip-link{
+      position:absolute;
+      top:-64px;
+      right:12px;
+      background:#fff;
+      color:#000;
+      text-decoration:none;
+      padding:12px 18px;
+      border-radius:14px;
+      box-shadow:var(--shadow);
+      z-index:200;
+      font-weight:800;
+    }
+    .skip-link:focus{top:12px}
 
-<style>
+    .container{
+      width:min(calc(100% - 32px), var(--max));
+      margin-inline:auto;
+    }
 
-body{
-font-family:'Heebo',Arial;
-margin:0;
-font-size:18px;
-color:#1e293b;
-background:#f6f7fb;
-line-height:1.9;
-}
+    .topbar{
+      background:var(--brand);
+      color:#fff;
+    }
+    .topbar .container{
+      min-height:56px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      flex-wrap:wrap;
+      padding:8px 0;
+    }
+    .topbar p{margin:0;font-size:18px}
+    .topbar a{
+      text-decoration:none;
+      font-weight:800;
+      color:#fff;
+    }
 
-.container{
-max-width:1100px;
-margin:auto;
-padding:25px;
-}
+    header{
+      position:sticky;
+      top:0;
+      z-index:100;
+      background:rgba(246,247,251,.92);
+      backdrop-filter:saturate(180%) blur(14px);
+      border-bottom:1px solid rgba(216,222,233,.95);
+    }
+    .header-inner{
+      min-height:var(--nav-height);
+      display:grid;
+      grid-template-columns:auto 1fr auto;
+      align-items:center;
+      gap:18px;
+    }
 
-header{
-background:#fff;
-border-bottom:1px solid #e5e7eb;
-position:sticky;
-top:0;
-z-index:10;
-}
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      text-decoration:none;
+      min-width:0;
+    }
+    .brand-mark{
+      width:56px;
+      height:56px;
+      border-radius:18px;
+      background:linear-gradient(135deg, var(--brand), var(--brand-2));
+      color:#fff;
+      display:grid;
+      place-items:center;
+      box-shadow:var(--shadow);
+      font-weight:800;
+      letter-spacing:.06em;
+      flex:none;
+    }
+    .brand-copy strong{
+      display:block;
+      font-size:22px;
+      line-height:1.2;
+    }
+    .brand-copy span{
+      display:block;
+      font-size:18px;
+      color:var(--muted);
+    }
 
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-flex-wrap:wrap;
-}
+    nav ul{
+      list-style:none;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      flex-wrap:wrap;
+      margin:0;
+      padding:0;
+    }
+    nav a{
+      text-decoration:none;
+      padding:12px 14px;
+      border-radius:14px;
+      font-weight:700;
+      color:var(--text);
+      transition:background-color .18s ease, transform .18s ease;
+      display:inline-block;
+    }
+    nav a:hover{
+      background:#fff;
+      transform:translateY(-1px);
+    }
 
-nav a{
-text-decoration:none;
-color:#111;
-font-weight:600;
-margin-left:15px;
-}
+    .header-actions,
+    .hero-actions,
+    .cta-actions{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      flex-wrap:wrap;
+    }
 
-.phone{
-background:#1e293b;
-color:#fff;
-padding:10px 16px;
-border-radius:8px;
-text-decoration:none;
-}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      min-height:54px;
+      padding:14px 20px;
+      border-radius:16px;
+      text-decoration:none;
+      font-weight:800;
+      border:1px solid transparent;
+      transition:transform .2s ease, box-shadow .2s ease, background-color .2s ease, border-color .2s ease;
+      will-change:transform;
+    }
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{
+      background:linear-gradient(135deg, var(--brand), var(--brand-2));
+      color:#fff;
+      box-shadow:var(--shadow);
+    }
+    .btn-secondary{
+      background:#fff;
+      color:var(--brand);
+      border-color:var(--line-strong);
+    }
+    .btn-ghost{
+      background:rgba(255,255,255,.08);
+      color:#fff;
+      border-color:rgba(255,255,255,.18);
+    }
 
-/* HERO */
+    main{display:block}
+    section{padding:34px 0}
+    .section-head{
+      display:flex;
+      align-items:end;
+      justify-content:space-between;
+      gap:18px;
+      margin-bottom:18px;
+      flex-wrap:wrap;
+    }
+    .section-head p{
+      max-width:64ch;
+      color:var(--muted);
+      margin:0;
+    }
 
-.hero{
-margin-top:40px;
-display:grid;
-grid-template-columns:1.1fr 0.9fr;
-gap:40px;
-align-items:center;
-}
+    .card{
+      background:rgba(255,255,255,.94);
+      border:1px solid rgba(216,222,233,.96);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
 
-.hero h1{
-font-size:30px;
-margin-bottom:15px;
-}
+    .hero{padding:36px 0 28px}
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.08fr .92fr;
+      gap:24px;
+      align-items:stretch;
+    }
+    .hero-copy{
+      padding:40px;
+      position:relative;
+      overflow:hidden;
+      isolation:isolate;
+    }
+    .hero-copy::before{
+      content:"";
+      position:absolute;
+      inset:auto -100px -100px auto;
+      width:260px;
+      height:260px;
+      border-radius:50%;
+      background:radial-gradient(circle, rgba(182,148,89,.20), transparent 70%);
+      z-index:-1;
+    }
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      background:var(--accent-soft);
+      color:var(--brand);
+      border:1px solid #e7dbc4;
+      border-radius:999px;
+      padding:10px 14px;
+      font-weight:800;
+      margin-bottom:18px;
+    }
 
-.hero p{
-margin-bottom:15px;
-}
+    h1,h2,h3,h4{margin:0 0 14px;line-height:1.24;letter-spacing:-0.01em}
+    h1{font-size:clamp(36px,5vw,58px)}
+    h2{font-size:clamp(28px,3.7vw,40px)}
+    h3{font-size:24px}
+    h4{font-size:20px}
+    p, li{font-size:18px;margin:0 0 14px}
+    .lead{
+      font-size:21px;
+      color:#1f2b40;
+      max-width:35ch;
+    }
 
-.hero img{
-width:100%;
-border-radius:16px;
-}
+    .hero-points{
+      list-style:none;
+      padding:0;
+      margin:26px 0 28px;
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:14px;
+    }
+    .hero-points li{
+      margin:0;
+      padding:16px;
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:18px;
+      font-weight:700;
+      min-height:100%;
+    }
 
-/* SECTIONS */
+    .hero-visual{
+      position:relative;
+      min-height:100%;
+      transform:translateZ(0);
+    }
+    .hero-visual img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      transition:transform .45s ease;
+    }
+    .hero-visual:hover img{transform:scale(1.025)}
+    .floating-panel{
+      position:absolute;
+      left:18px;
+      bottom:18px;
+      max-width:340px;
+      background:rgba(21,35,63,.93);
+      color:#fff;
+      border-radius:18px;
+      padding:18px 18px 16px;
+      box-shadow:var(--shadow);
+    }
+    .floating-panel strong{
+      display:block;
+      font-size:20px;
+      margin-bottom:6px;
+    }
 
-section{
-margin-top:70px;
-}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+    .service-card, .text-card, .cta-band, .footer-card{padding:30px}
+    .service-card{background:linear-gradient(180deg,#fff 0%, #fbfcff 100%)}
+    .service-card h3, .text-card h3, .footer-card h3{color:var(--brand)}
 
-h2{
-font-size:26px;
-margin-bottom:15px;
-}
+    .highlight{
+      border-inline-start:6px solid var(--accent);
+      padding-inline-start:18px;
+    }
 
-h3{
-font-size:21px;
-margin-top:20px;
-}
+    .media-split{
+      display:grid;
+      grid-template-columns:.88fr 1.12fr;
+      gap:20px;
+      align-items:stretch;
+    }
+    .photo-card img,
+    .content-photo img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
 
-.grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-align-items:center;
-}
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:14px;
+      margin-top:18px;
+    }
+    .stat{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:20px;
+      padding:20px;
+      text-align:center;
+    }
+    .stat strong{
+      display:block;
+      font-size:30px;
+      line-height:1.1;
+      color:var(--brand);
+      margin-bottom:8px;
+    }
 
-.img img{
-width:100%;
-border-radius:16px;
-}
+    .feature-list,
+    .language-list,
+    .check-list{
+      list-style:none;
+      margin:0;
+      padding:0;
+    }
+    .feature-list li,
+    .check-list li{
+      position:relative;
+      padding-inline-start:24px;
+      margin-bottom:12px;
+    }
+    .feature-list li::before,
+    .check-list li::before{
+      content:"•";
+      position:absolute;
+      inset-inline-start:0;
+      color:var(--accent);
+      font-weight:800;
+    }
 
-/* CTA */
+    .language-list{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:14px;
+    }
+    .language-list li{
+      margin:0;
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:999px;
+      padding:12px 16px;
+      font-weight:800;
+      box-shadow:0 8px 20px rgba(21,35,63,.05);
+    }
 
-.cta{
-background:#1e293b;
-color:#fff;
-padding:40px;
-border-radius:16px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-flex-wrap:wrap;
-}
+    .band{
+      background:linear-gradient(135deg, var(--brand), #1b2d56);
+      color:#fff;
+      position:relative;
+      overflow:hidden;
+    }
+    .band::after{
+      content:"";
+      position:absolute;
+      inset:auto auto -80px -80px;
+      width:220px;
+      height:220px;
+      background:radial-gradient(circle, rgba(255,255,255,.12), transparent 72%);
+      border-radius:50%;
+      pointer-events:none;
+    }
+    .band h2,
+    .band h3,
+    .band p{color:#fff}
 
-footer{
-margin-top:70px;
-background:#fff;
-padding:40px;
-}
+    .cta-band{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+    .cta-band p{max-width:54ch}
 
-@media(max-width:900px){
-.hero,.grid{grid-template-columns:1fr}
-}
+    .sticky-call{
+      position:fixed;
+      left:18px;
+      bottom:18px;
+      z-index:120;
+      box-shadow:var(--shadow);
+    }
 
-</style>
+    footer{padding:24px 0 42px}
+    .footer-grid{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:20px;
+    }
+    .footer-card a{
+      color:var(--brand-2);
+      font-weight:800;
+      word-break:break-word;
+    }
+    .footer-mini{
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+      flex-wrap:wrap;
+      margin-top:16px;
+      color:var(--muted);
+      font-size:18px;
+    }
 
+    @media (prefers-reduced-motion: reduce){
+      html{scroll-behavior:auto}
+      *, *::before, *::after{
+        animation:none !important;
+        transition:none !important;
+      }
+    }
+
+    @media (max-width: 1140px){
+      .header-inner{
+        grid-template-columns:1fr;
+        padding:16px 0;
+      }
+      nav ul, .header-actions{justify-content:flex-start}
+      .hero-grid, .media-split, .footer-grid{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:1fr 1fr}
+      .stats{grid-template-columns:repeat(2,1fr)}
+    }
+
+    @media (max-width: 760px){
+      body{font-size:18px}
+      .container{width:min(calc(100% - 24px), var(--max))}
+      .hero-copy, .service-card, .text-card, .cta-band, .footer-card{padding:22px}
+      .grid-3, .grid-2, .hero-points, .stats{grid-template-columns:1fr}
+      .topbar .container{justify-content:center}
+      nav ul{justify-content:flex-start;gap:6px}
+      nav a{padding:10px 12px}
+      .brand-copy strong{font-size:20px}
+      .brand-copy span{font-size:18px}
+      .sticky-call{left:12px;right:12px}
+      .sticky-call .btn{width:100%}
+    }
+  </style>
 </head>
 <body>
+  <a class="skip-link" href="#main-content" title="דלגו לתוכן המרכזי">דלגו לתוכן המרכזי</a>
 
-<header>
-<div class="container">
-<nav>
+  <div class="topbar" aria-label="פרטי התקשרות מהירים">
+    <div class="container">
+      <p>עו״ד, נוטריון ומגשרת | טירת הכרמל, חיפה, חדרה ותל אביב</p>
+      <a href="tel:048668665" title="התקשרו למשרד בטלפון 04-866-8665" aria-label="התקשרו למשרד בטלפון 04-866-8665">04-866-8665</a>
+    </div>
+  </div>
 
-<div><strong>עו״ד אריאלה רוזנטל-סודרי</strong></div>
+  <header aria-label="כותרת עליונה ותפריט ניווט">
+    <div class="container header-inner">
+      <a class="brand" href="#top" title="חזרה לראש הדף" aria-label="חזרה לראש הדף">
+        <span class="brand-mark" aria-hidden="true">ARS</span>
+        <span class="brand-copy">
+          <strong>אריאלה רוזנטל-סודרי</strong>
+          <span>עורכת דין, נוטריון ומגשרת</span>
+        </span>
+      </a>
 
-<div>
-<a href="#about">אודות</a>
-<a href="#family">דיני משפחה</a>
-<a href="#children">חטיפת ילדים</a>
-<a href="#notary">נוטריון</a>
-<a href="#contact">יצירת קשר</a>
-</div>
+      <nav aria-label="תפריט ראשי">
+        <ul>
+          <li><a href="#about" title="מעבר לאזור אודות">אודות</a></li>
+          <li><a href="#abduction" title="מעבר לאזור חטיפת ילדים">חטיפת ילדים</a></li>
+          <li><a href="#family" title="מעבר לאזור גירושין ודיני משפחה">גירושין ודיני משפחה</a></li>
+          <li><a href="#inheritance" title="מעבר לאזור צוואות ירושות וייפוי כוח">צוואות וירושות</a></li>
+          <li><a href="#notary" title="מעבר לאזור שירותי נוטריון">שירותי נוטריון</a></li>
+          <li><a href="#contact" title="מעבר לאזור יצירת קשר">יצירת קשר</a></li>
+        </ul>
+      </nav>
 
-<div>
-<a class="phone" href="tel:048668665">04-866-8665</a>
-</div>
+      <div class="header-actions">
+        <a class="btn btn-secondary" href="https://ars-law.co.il/%D7%A0%D7%95%D7%98%D7%A8%D7%99%D7%95%D7%9F-%D7%91%D7%97%D7%99%D7%A4%D7%94/" title="נוטריון בחיפה באתר המקורי" target="_blank" rel="noopener noreferrer">נוטריון בחיפה</a>
+        <a class="btn btn-primary" href="tel:048668665" title="התקשרו עכשיו למשרד" aria-label="התקשרו עכשיו למשרד">התקשרו עכשיו</a>
+      </div>
+    </div>
+  </header>
 
-</nav>
-</div>
-</header>
+  <main id="main-content">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="card hero-copy">
+          <div class="eyebrow">משרד עורכי דין ונוטריון עם ניסיון רב בתחומים רגישים ומורכבים</div>
+          <h1 id="hero-title">ייצוג משפטי מדויק, מכבד ונחוש במצבי חיים שבהם אין מקום לפשרות</h1>
+          <p class="lead">עו״ד אריאלה רוזנטל-סודרי מלווה לקוחות בתחומי חטיפת ילדים בישראל ובינלאומית, גירושין, דיני משפחה, צוואות, ירושות, ייפוי כוח ושירותי נוטריון בחיפה והסביבה, מתוך שילוב בין מקצוענות משפטית, ראייה אסטרטגית ורגישות אנושית.</p>
+          <p>כאשר אדם פונה למשרד עורכי דין בענייני משפחה, מעמד אישי, ירושה או נוטריון, הוא לרוב אינו מחפש רק תשובה משפטית. הוא מחפש ודאות, סדר, יד מכוונת ומשרד שיודע להבין מה באמת מונח על הכף. לכן דף הנחיתה הזה נבנה בקו עיצובי קלאסי, נגיש ובהיר, כדי לשקף בדיוק את האופי המקצועי של המשרד: שפה ברורה, נראות מכובדת, מבנה מאורגן ולחצני פעולה בולטים ונוחים.</p>
 
-<div class="container">
+          <ul class="hero-points" aria-label="יתרונות מרכזיים של המשרד">
+            <li>התמחות בולטת בתיקי חטיפת ילדים והליכי אמנת האג</li>
+            <li>ליווי בהליכי גירושין, משמורת, מזונות וחלוקת רכוש</li>
+            <li>עריכת צוואות, טיפול בירושות, עיזבונות וייפוי כוח</li>
+            <li>שירותי נוטריון בשפות שונות, כולל מסמכים לחו״ל</li>
+          </ul>
 
-<!-- HERO -->
-<section class="hero">
+          <div class="hero-actions" aria-label="פעולות מהירות בדף הנחיתה">
+            <a class="btn btn-primary" href="tel:048668665" title="התקשרו למשרד עכשיו">04-866-8665</a>
+            <a class="btn btn-secondary" href="#notary" title="מעבר ישיר לשירותי הנוטריון">לשירותי נוטריון</a>
+          </div>
+        </div>
 
-<div>
+        <div class="card hero-visual">
+          <img src="ariela.jpg" alt="אילוסטרציה אלגנטית של משרד עורכי דין ונוטריון בסגנון קלאסי" />
+          <div class="floating-panel" aria-hidden="true">
+            <strong>נראות מקצועית עם נגישות גבוהה</strong>
+            טקסט קריא, ניגודיות צבעים טובה, ניווט מקלדת ותפריט עוגנים ברור.
+          </div>
+        </div>
+      </div>
+    </section>
 
-<h1>ליווי משפטי מדויק במצבים בהם אין מקום לפשרות</h1>
+    <section id="about" aria-labelledby="about-title">
+      <div class="container media-split">
+        <div class="card photo-card content-photo">
+          <img src="גירושין-בחיפה.jpg" alt="אילוסטרציה של ספרי משפט ומסמכים במשרד עורכי דין" />
+        </div>
 
-<p>
-כאשר מתמודדים עם סוגיות משפטיות בתחום המשפחה או עם מצבים מורכבים כמו חטיפת ילדים, הבחירה בעורך הדין אינה טכנית – היא מהותית.
-</p>
+        <div class="card text-card">
+          <div class="section-head">
+            <div>
+              <h2 id="about-title">אודות המשרד</h2>
+              <p>משרד עורכי הדין של אריאלה רוזנטל-סודרי הוקם בשנת 2000, ואריאלה עצמה עורכת דין מוסמכת משנת 1999. באתר המשרד מצוין כי היא בוגרת תואר ראשון ושני במשפטים מאוניברסיטת ציריך, התמחתה במשרד המשפטים בירושלים, ומשנת 2010 משמשת גם כנוטריון מוסמך. המשרד פועל מחיפה והצפון, לצד פעילות גם בתל אביב ובחדרה. citeturn150789view0turn150789view4</p>
+            </div>
+          </div>
 
-<p>
-משרד עורכי הדין אריאלה רוזנטל-סודרי מעניק ליווי מקצועי ואחראי כבר למעלה מ־25 שנה, תוך הקפדה על הבנה עמוקה של כל מקרה והתאמת הדרך המשפטית לנסיבות האישיות של הלקוח.
-</p>
+          <p class="highlight">היתרון של המשרד אינו רק ברשימת התחומים שבהם הוא עוסק, אלא ביכולת להעניק ללקוח ליווי משפטי ממוקד, שקול ורגיש, גם כאשר המציאות עצמה טעונה, משפחתית, כלכלית או בינלאומית.</p>
+          <p>האתר הרשמי מציג מעטפת רחבה של שירותים: דיני משפחה ומעמד אישי, גירושין, צוואות וירושות, מקרקעין, דיני עבודה, הוצאה לפועל, הסדרת מעמד בישראל ושירותי נוטריון בשפות שונות. בדף נחיתה זה בחרנו להתמקד בשירותים הרלוונטיים ביותר לצורכי תדמית ממוקדת: חטיפת ילדים, גירושין ודיני משפחה, צוואות וירושות, ייפוי כוח ושירותי נוטריון. citeturn150789view0turn150789view5</p>
+          <p>כחלק מהצגה מלאה של תחומי הפעילות, שולב גם אזכור לליווי בהוצאת דרכון ואזרחות גרמנית, באופן המשתלב היטב במעטפת של טיפול במסמכים, בתרגומים, בהצהרות ובצרכים משפטיים בעלי זיקה בינלאומית.</p>
 
-<p>
-העבודה המשפטית במשרד נשענת על ניסיון, שיקול דעת ויכולת לנהל תהליכים בצורה שקולה ומדויקת, גם כאשר מדובר במצבים רגישים ומורכבים במיוחד.
-</p>
+          <div class="stats" aria-label="נתונים מרכזיים על המשרד">
+            <div class="stat"><strong>1999</strong><span>שנת הסמכה כעורכת דין</span></div>
+            <div class="stat"><strong>2010</strong><span>נוטריון מוסמך</span></div>
+            <div class="stat"><strong>2000</strong><span>שנת הקמת המשרד</span></div>
+            <div class="stat"><strong>3</strong><span>מוקדי פעילות שמופיעים באתר</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</div>
+    <section id="abduction" aria-labelledby="abduction-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 id="abduction-title">חטיפת ילדים בישראל ובינלאומית</h2>
+            <p>זהו התחום שמקבל כאן מקום מרכזי במיוחד, בהתאם לבקשתך ולמיצוב שעולה מהאתר.</p>
+          </div>
+        </div>
 
-<div class="img">
-<img src="ariela.jpg" alt="">
-</div>
+        <div class="grid-2">
+          <article class="card service-card">
+            <h3>תחום רגיש, דחוף ובעל השלכות חוצות גבולות</h3>
+            <p>באתר של אריאלה רוזנטל-סודרי מודגש כי המשרד הוא מן המשרדים המובילים בתחום חטיפת הילדים, עם ניסיון של מעל 25 שנה, וכי כבר בתקופת ההתמחות במשרד המשפטים היא סייעה למחלקה הבינלאומית העוסקת בחטיפות ילדים. בנוסף, אחד מדפי האתר מדגיש כי המשרד מתמחה בתיקי חטיפת ילדים ובעל ניסיון רב בתחום, לרבות טיפול בנושאים הנוגעים לאמנת האג ולהחזרת ילדים חטופים. citeturn150789view1turn960094search0</p>
+            <p>בדף נחיתה ממוקד תדמית, זהו בדיוק סוג התחום שראוי להציג בצורה מאוזנת אך חזקה: לא בסגנון דרמטי או צעקני, אלא עם מסר ברור של ניסיון, מהירות תגובה, הבנה עמוקה של ההליך ויכולת לנהל תיק מורכב כאשר הזמן הוא גורם קריטי.</p>
+            <ul class="feature-list" aria-label="נקודות מפתח בתחום חטיפת ילדים">
+              <li>טיפול במקרים הקשורים לאמנת האג והליכים בינלאומיים.</li>
+              <li>ליווי משפטי במצבים שבהם קיימת מחלוקת חריפה בין הורים.</li>
+              <li>הבנה של מורכבות משפטית לצד רגישות להשלכות האישיות על המשפחה והילדים.</li>
+            </ul>
+          </article>
 
-</section>
+          <article class="card service-card">
+            <h3>איך מציגים את השירות נכון בדף נחיתה?</h3>
+            <p>המסר שנבחר כאן אינו מבטיח תוצאה, ואינו עושה שימוש בסיסמאות משפטיות ריקות. במקום זאת, הוא בונה אמון דרך ניסוח ענייני ומדויק: לקוחות שמחפשים עורכת דין לתיק חטיפת ילדים רוצים להבין שהם הגיעו למשרד שמכיר את המטריה, יודע לעבוד תחת לחץ, ושומר על רמה גבוהה של דיוק ודיסקרטיות.</p>
+            <p>לכן העיצוב של החלק הזה נשען על כרטיסי תוכן נקיים, הרבה מרווח לבן, כותרות קצרות, וניגודיות גבוהה שמאפשרת קריאה רגועה גם כאשר הנושא עצמו מורכב וטעון.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<!-- ABOUT -->
-<section id="about">
+    <section id="family" aria-labelledby="family-title" class="band">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 id="family-title">גירושין ודיני משפחה</h2>
+            <p>אזור תוכן שמציג סמכות מקצועית לצד יכולת ליווי אנושית.</p>
+          </div>
+        </div>
 
-<div class="grid">
+        <div class="grid-2">
+          <article class="card service-card">
+            <h3>ליווי משפטי בתהליכים שמשנים חיים</h3>
+            <p>האתר של המשרד מציין כי אריאלה רוזנטל-סודרי מלווה הליכי גירושין ודיני משפחה, וכי למשרד ותק של מעל 25 שנה בליווי, טיפול וייצוג של מתגרשים בבתי דין. עוד מודגש כי לפני כל הליך, הסכם או צעד משמעותי בתחום, מומלץ לקבל ייעוץ משפטי מקצועי. citeturn150789view2turn150789view5</p>
+            <p>בדף הנחיתה הבלטנו את השירותים שבדרך כלל חשוב ללקוח לראות במבט ראשון: גירושין, הסכמי ממון, מזונות, משמורת, חלוקת רכוש והסכמות בין בני זוג. המטרה היא להעביר מסר של משרד שיודע לייצג, אבל גם יודע לנהל תהליך נכון מהשלב הראשון, לעיתים עוד לפני שהוגשה בקשה ליישוב סכסוך.</p>
+          </article>
 
-<div class="img">
-<img src="ariela.jpg" alt="אריאלה רוזנטל סודרי">
-</div>
+          <article class="card service-card">
+            <h3>שפה משפטית ברורה, לא מכבידה</h3>
+            <p>הכתיבה כאן נבנתה בשפה נקייה, קלאסית ומתאימה לעורכת דין. אין שימוש במלל נפוח, אין ניסוחים פרסומיים אגרסיביים מדי, ואין תחושת ״דף מכירה״ גס. במקום זה מתקבלת תחושה מכובדת, בטוחה ומקצועית, המתאימה לעולם המשפט בכלל ולעולם דיני המשפחה בפרט.</p>
+            <ul class="check-list" aria-label="תחומים מרכזיים בדיני משפחה">
+              <li>הליכי גירושין והסכמי גירושין.</li>
+              <li>מזונות, משמורת והסדרי הורות.</li>
+              <li>חלוקת רכוש והסכמי ממון.</li>
+              <li>ליווי משפטי אישי, מסודר וזהיר לאורך כל הדרך.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<div>
+    <section id="inheritance" aria-labelledby="inheritance-title">
+      <div class="container media-split">
+        <div class="card text-card">
+          <div class="section-head">
+            <div>
+              <h2 id="inheritance-title">צוואות, ירושות, עיזבונות וייפוי כוח</h2>
+              <p>אחד התחומים החשובים ביותר ללקוחות שמחפשים ודאות, סדר וחשיבה לטווח ארוך.</p>
+            </div>
+          </div>
 
-<h2>גישה מקצועית שמבוססת על ניסיון והבנה</h2>
+          <p>באתר המשרד מצוין כי הייצוג בנושאי צוואות, ירושות ועיזבונות הוא מקיף ומגוון, וכולל בין היתר עריכת צוואה, צוואות הדדיות, צו ירושה, צו קיום צוואה וכן שירותים נוספים. בנוסף, במפת התחומים של המשרד מופיעים גם ייפויי כוח כחלק מן השירותים הרלוונטיים ללקוחות פרטיים ולמשפחות. citeturn184437search2turn184437search0</p>
+          <p>מבחינה שיווקית-תדמיתית, זהו אזור שחשוב להציג בצורה שנותנת ביטחון. מי שמגיע לדף כזה לא תמיד נמצא בעיצומו של סכסוך; לעיתים הוא פשוט רוצה להסדיר עניינים בזמן, להגן על בני משפחתו, למנוע מחלוקות עתידיות ולטפל במסמכים בצורה מסודרת. לכן הסגנון כאן אינו לוחץ, אלא רציני, מקצועי ונעים לקריאה.</p>
+          <p>השילוב של צוואות, ירושות וייפוי כוח באותו אזור בדף יוצר רצף נכון: הוא מציג משרד שיכול ללוות גם סכסוכים ומשברים, וגם תכנון משפטי אחראי שמטרתו להפחית בעיות מראש.</p>
+        </div>
 
-<p>
-המשרד פועל משנת 2000 ומלווה לקוחות במגוון רחב של תחומים משפטיים, עם דגש על דיני משפחה, צוואות וירושות, ייפוי כוח ושירותי נוטריון.
-</p>
+        <div class="card photo-card content-photo">
+          <img src="אריאלה-רוזנטל-סודרי.png" alt="אילוסטרציה של מסמכים משפטיים, חותמת נוטריון ועט חתימה" />
+        </div>
+      </div>
+    </section>
 
-<p>
-בבסיס העבודה עומדת ההבנה כי כל תיק הוא עולם בפני עצמו. לכן, כל מקרה נבחן לעומק, תוך התייחסות לכל ההיבטים המשפטיים והאישיים, ומתוך מטרה לייצר פתרון נכון ומאוזן.
-</p>
+    <section id="notary" aria-labelledby="notary-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 id="notary-title">שירותי נוטריון בחיפה והסביבה</h2>
+            <p>אזור מרכזי בדף עם דגש על השירותים, השפות והקישור הישיר לעמוד הייעודי באתר.</p>
+          </div>
+          <a class="btn btn-secondary" href="https://ars-law.co.il/%D7%A0%D7%95%D7%98%D7%A8%D7%99%D7%95%D7%9F-%D7%91%D7%97%D7%99%D7%A4%D7%94/" title="מעבר לעמוד נוטריון בחיפה באתר הרשמי" target="_blank" rel="noopener noreferrer">לעמוד נוטריון בחיפה</a>
+        </div>
 
-<p>
-בנוסף לפעילות בישראל, המשרד מעניק גם ליווי בהוצאת דרכון ואזרחות גרמנית, עבור לקוחות הזקוקים לטיפול משפטי בעל היבטים בינלאומיים.
-</p>
+        <div class="grid-2">
+          <article class="card text-card">
+            <h3>מה כולל השירות הנוטריוני?</h3>
+            <p>לפי האתר, המשרד מספק את כל שירותי הנוטריון המנויים בחוק, ומציג בין היתר אישורים נוטריוניים, תרגום נוטריוני, תצהירים נוטריוניים, אישור אפוסטיל, אישורי חיים, אישור הסכמי ממון, ייפויי כוח ומסמכים שונים לצרכים פרטיים, משפחתיים ובינלאומיים. עוד מצוין כי המשרד ממוקם בדרך מנחם בגין 35, טירת הכרמל, ומספק שירותי נוטריון בחיפה והסביבה. citeturn150789view3turn150789view4</p>
+            <p>בדף הנחיתה השירות מוצג בצורה קלה לסריקה: כותרת ברורה, תיאור תכליתי, כפתור ייעודי לעמוד נוטריון בחיפה, ותחושת סדר שמשרתת היטב את קהל היעד של שירותי נוטריון, אשר מגיע לרוב עם צורך פרקטי ודחוף.</p>
+          </article>
 
-</div>
+          <article class="card text-card" id="languages">
+            <h3>שפות שירותי הנוטריון</h3>
+            <p>באתר המשרד מוזכרות שפות השירות הבאות: עברית, אנגלית, גרמנית, צרפתית, ספרדית, איטלקית, ובמקומות מסוימים נזכרת גם הולנדית. בנוסף, יש באתר עמודים ייעודיים לשירותי נוטריון באנגלית, בגרמנית ובספרדית. citeturn150789view0turn150789view3turn184437search3turn184437search11</p>
+            <ul class="language-list" aria-label="שפות לשירותי נוטריון">
+              <li>עברית</li>
+              <li>אנגלית</li>
+              <li>גרמנית</li>
+              <li>צרפתית</li>
+              <li>ספרדית</li>
+              <li>איטלקית</li>
+              <li>הולנדית</li>
+            </ul>
+            <p style="margin-top:16px;">האזור הזה בנוי כך שיהיה גם אינפורמטיבי וגם שיווקי: הוא מאפשר למבקר להבין במהירות שהמשרד ערוך לטיפול במסמכים מקומיים ובינלאומיים, ושהוא רלוונטי גם ללקוחות הזקוקים לשירות בשפה זרה.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-</div>
+    <section aria-labelledby="contact-title" id="contact">
+      <div class="container">
+        <div class="card cta-band band">
+          <div>
+            <h2 id="contact-title">לשיחה עם המשרד</h2>
+            <p>לייעוץ בנושא חטיפת ילדים, גירושין, צוואות, ירושות, ייפוי כוח, שירותי נוטריון בחיפה והסביבה או ליווי בהוצאת דרכון ואזרחות גרמנית, ניתן ליצור קשר ישיר עם המשרד בטלפון או במייל.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="tel:048668665" title="התקשרו למשרד בטלפון 04-866-8665">04-866-8665</a>
+            <a class="btn btn-ghost" href="mailto:Ariela@ars-law.co.il" title="שליחת דוא״ל למשרד">Ariela@ars-law.co.il</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-</section>
+  <footer aria-label="כותרת תחתונה">
+    <div class="container footer-grid">
+      <div class="card footer-card">
+        <h3>פרטיות ושקיפות</h3>
+        <p>אנו מכבדים את פרטיות המשתמשים באתר זה. דף הנחיתה אינו כולל טפסי השארת פרטים ואינו אוסף מידע אישי באופן ישיר. ייתכן ונעשה שימוש בכלי סטטיסטיקה וניתוח תנועה (כגון cookies) לצורך שיפור חוויית המשתמש.</p>
+        <p>האתר מאוחסן ומופעל באמצעות פלטפורמת github, וייתכן כי נתונים טכניים נאספים בהתאם למדיניות הפלטפורמה. ניתן לעיין במדיניות הפרטיות של github בקישור הבא.</p>
+        <p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" title="מדיניות הפרטיות של GitHub" target="_blank" rel="noopener noreferrer">GitHub General Privacy Statement</a></p>
+      </div>
 
-<!-- FAMILY -->
-<section id="family">
+      <div class="card footer-card">
+        <h3>פרטי קשר</h3>
+        <p><strong>עו״ד אריאלה רוזנטל-סודרי</strong><br />עורכת דין, נוטריון ומגשרת</p>
+        <p>טלפון: <a href="tel:048668665" title="חיוג למספר 04-866-8665">04-866-8665</a></p>
+        <p>אימייל: <a href="mailto:Ariela@ars-law.co.il" title="שליחת מייל ל-Ariela@ars-law.co.il">Ariela@ars-law.co.il</a></p>
+        <p>קישור ישיר: <a href="https://ars-law.co.il/%D7%A0%D7%95%D7%98%D7%A8%D7%99%D7%95%D7%9F-%D7%91%D7%97%D7%99%D7%A4%D7%94/" title="נוטריון בחיפה באתר הרשמי" target="_blank" rel="noopener noreferrer">נוטריון בחיפה</a></p>
+      </div>
+    </div>
 
-<h2>דיני משפחה</h2>
+    <div class="container footer-mini">
+      <span>© דף נחיתה תדמיתי המותאם ל-GitHub Pages</span>
+      <span>נבנה עם היררכיית כותרות, קישורי עוגן, ALT לתמונות, גודל טקסט מינימלי של 18px וניגודיות משופרת</span>
+    </div>
+  </footer>
 
-<p>
-דיני משפחה הם מהתחומים המורכבים והרגישים ביותר בעולם המשפט. הם אינם עוסקים רק בזכויות וחובות, אלא גם במערכות יחסים, בהחלטות אישיות ובהשלכות ארוכות טווח.
-</p>
-
-<p>
-המשרד מלווה לקוחות בהליכי גירושין, משמורת, מזונות וחלוקת רכוש, תוך ניסיון לשמור על איזון נכון בין הצרכים המשפטיים לבין המציאות האישית של כל לקוח.
-</p>
-
-<p>
-הגישה היא עניינית, מדויקת ושקולה – מתוך מטרה לנהל את ההליך בצורה שתאפשר התקדמות ולא הסלמה.
-</p>
-
-</section>
-
-<!-- CHILDREN -->
-<section id="children">
-
-<div class="grid">
-
-<div>
-
-<h2>חטיפת ילדים – תחום הדורש מומחיות אמיתית</h2>
-
-<p>
-תיקי חטיפת ילדים מציבים אתגרים משפטיים מורכבים במיוחד, לעיתים גם בזירה הבינלאומית. מדובר במצבים בהם כל פעולה צריכה להיעשות במהירות, בזהירות ובדיוק.
-</p>
-
-<p>
-עו״ד אריאלה רוזנטל-סודרי עוסקת בתחום זה לאורך שנים רבות, ומביאה ניסיון בטיפול בתיקים הכוללים הליכים לפי אמנת האג וניהול מקרים מורכבים.
-</p>
-
-<p>
-זהו תחום שבו הניסיון והיכולת להבין את התמונה הרחבה הם קריטיים להצלחת ההליך.
-</p>
-
-</div>
-
-<div class="img">
-<img src="גירושין-בחיפה.jpg" alt="">
-</div>
-
-</div>
-
-</section>
-
-<!-- NOTARY -->
-<section id="notary">
-
-<h2>שירותי נוטריון בחיפה</h2>
-
-<p>
-המשרד מספק שירותי נוטריון מלאים, לרבות אימות חתימה, אישור מסמכים ותרגומים נוטריוניים.
-</p>
-
-<p>
-השירות ניתן במגוון שפות, ביניהן אנגלית, גרמנית, צרפתית, ספרדית ואיטלקית, ומותאם ללקוחות פרטיים ולעסקים.
-</p>
-
-<p>
-למידע נוסף ניתן לעיין בעמוד
-<a title="נוטריון בחיפה" href="https://ars-law.co.il/%D7%A0%D7%95%D7%98%D7%A8%D7%99%D7%95%D7%9F-%D7%91%D7%97%D7%99%D7%A4%D7%94/" target="_blank">
-נוטריון בחיפה
-</a>.
-</p>
-
-</section>
-
-<!-- CTA -->
-<section id="contact">
-
-<div class="cta">
-
-<div>
-<h2>ליצירת קשר</h2>
-<p>
-במקרים בהם נדרש ליווי משפטי, חשוב לקבל החלטות על בסיס מידע ברור ושיקול דעת מקצועי.
-</p>
-</div>
-
-<a class="phone" href="tel:048668665">04-866-8665</a>
-
-</div>
-
-</section>
-
-</div>
-
-<footer>
-<div class="container">
-
-<p>
-אנו מכבדים את פרטיות המשתמשים באתר זה. ייתכן שימוש ב-cookies לצורך שיפור חוויית המשתמש.
-</p>
-
-<p>
-<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank">
-מדיניות פרטיות
-</a>
-</p>
-
-</div>
-</footer>
-
+  <div class="sticky-call" aria-label="כפתור חיוג קבוע">
+    <a class="btn btn-primary" href="tel:048668665" title="התקשרו עכשיו למשרד">שיחה מהירה: 04-866-8665</a>
+  </div>
 </body>
 </html>
